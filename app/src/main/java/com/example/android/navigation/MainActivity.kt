@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         NavigationUI.setupActionBarWithNavController(this, navController, drawerLayout)
         NavigationUI.setupWithNavController(binding.navView, navController)
 
-        
+
         // prevent nav gesture if not on start destination
         navController.addOnDestinationChangedListener { nc: NavController, nd: NavDestination, args: Bundle? ->
             if (nd.id == nc.graph.startDestination) {
